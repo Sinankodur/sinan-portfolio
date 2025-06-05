@@ -93,7 +93,7 @@ nav ul li {
 
 /* Hamburger styles */
 .hamburger {
-  display: none; /* hidden by default */
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   width: 2rem;

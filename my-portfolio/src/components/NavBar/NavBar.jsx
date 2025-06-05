@@ -110,7 +110,7 @@ const NavBar = () => {
                   ref={(el) => (navItemsRef.current[2] = el)}
                   className={`nav-link ${isActive ? "nav-link-active" : ""}`}
                 >
-                  Service
+                  Services
                 </li>
               )}
             </NavLink>
