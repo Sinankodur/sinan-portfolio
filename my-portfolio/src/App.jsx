@@ -1,14 +1,7 @@
-import './App.css'
-import NavBar from './components/NavBar/NavBar'
-import HomePage from './components/HomePage/HomePage'
+import "./App.css";
 
 const App = () => {
-  return (
-    <>
-      <NavBar/>
-      <HomePage/>
-    </>
-  )
-}
+  return <></>;
+};
 
-export default App
+export default App;
