@@ -1,6 +1,7 @@
 import "./HomePage.css";
 import Banner from "../../assets/sinan.png";
-import { ArrowUpRightCircleFill } from "react-bootstrap-icons";
+import { BsArrowUpRightCircleFill } from "react-icons/bs";
+
 import { Link } from "react-router-dom";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
@@ -18,13 +19,13 @@ const HomePage = () => {
     deleteSpeed: 40,
   });
   return (
-    <>
+    <div style={{flex: 1}}>
       <div className="home">
         <p className="hello">
           <span>Hello!</span>
         </p>
         <p className="subtitle">
-          A <span>Software Developer</span> based in Kerala, India.
+          I am a <span>Software Developer</span> based in Kerala, India.
         </p>
         <p className="title">
           I&apos;m<span>Sinan</span>,
@@ -41,11 +42,11 @@ const HomePage = () => {
         <p className="resume-arrow-text">
           <Link to="/resume">
             Resume &nbsp;
-            <ArrowUpRightCircleFill style={{ marginBottom: "-0.2rem" }} />
+            <BsArrowUpRightCircleFill  style={{ marginBottom: "-0.2rem" }} />
           </Link>
         </p>
       </div>
-    </>
+    </div>
   );
 };
 

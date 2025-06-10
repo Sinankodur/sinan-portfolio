@@ -29,10 +29,10 @@
 .logo span {
   border-radius: 90%;
   padding: 0.2rem 0.5rem;
-  background-color: rgb(249, 131, 34);
+  background-color: #f98322;
   font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
   margin-right: 0.4rem;
 }
 
@@ -74,7 +74,7 @@ nav ul li {
 
 .active-indicator {
   position: absolute;
-  background-color: rgb(249, 131, 34);
+  background-color: #f98322;
   border-radius: 2rem;
   z-index: 1;
   top: 0.5rem;

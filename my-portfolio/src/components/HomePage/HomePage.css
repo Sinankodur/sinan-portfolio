@@ -49,7 +49,7 @@
   justify-content: center;
   font-size: 4.8rem;
   font-weight: 400;
-  color: rgb(249, 131, 34);
+  color: #f98322;
   margin-top: -0.2rem;
 }
 
@@ -62,8 +62,8 @@
 }
 
 .banner {
-  width: 40rem;
-  max-width: 90vw;
+  width: 20.5rem;
+  max-width: 100vw;
   height: auto;
 }
 
@@ -79,9 +79,9 @@
   border: 1px solid white;
   padding: 0.9rem 3rem;
   border-radius: 2rem;
-  background-color: rgb(249, 131, 34);
+  background-color: #f98322;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
   margin: 0;
@@ -92,10 +92,6 @@
   .title-2 {
     font-size: 3.5rem;
     padding: 0.3rem 0.8rem;
-  }
-
-  .banner {
-    width: 30rem;
   }
 
   .banner-container {
@@ -114,17 +110,13 @@
     font-size: 2.8rem;
   }
 
-  .banner {
-    width: 28rem;
-  }
-
   .banner-container {
     top: 55%;
   }
 
   .resume-arrow-text {
     padding: 0.7rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -149,10 +141,6 @@
     margin-bottom: 1.5rem;
   }
 
-  .banner {
-    max-width: 26rem;
-  }
-
   .card {
     bottom: 0;
     left: 34%;
@@ -161,7 +149,7 @@
 
   .resume-arrow-text {
     padding: 0.6rem 2.5rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -172,11 +160,10 @@
   }
 
   .banner {
-    max-width: 20rem;
+    width: 22rem;
   }
 
   .resume-arrow-text {
     padding: 0.5rem 1rem;
-    font-size: 0.9rem;
   }
 }
