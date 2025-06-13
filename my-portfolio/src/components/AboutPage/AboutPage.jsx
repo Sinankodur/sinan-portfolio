@@ -1,7 +1,6 @@
 import "./AboutPage.css";
 import aboutImage from "../../assets/about-page-main.jpg";
 import Marquee from "react-fast-marquee";
-import Footer from "../Footer/Footer";
 
 const AboutPage = () => {
   return (
