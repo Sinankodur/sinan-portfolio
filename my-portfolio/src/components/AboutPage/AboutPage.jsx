@@ -1,11 +1,39 @@
+import { useEffect, useRef } from "react";
 import "./AboutPage.css";
-import aboutImage from "../../assets/about-page-main.jpg";
+import aboutImage from "../../assets/images/about-page-main.jpg";
 import Marquee from "react-fast-marquee";
 
 const AboutPage = () => {
+  const headerRef = useRef(null);
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (headerRef.current) {
+        headerRef.current.style.opacity = "1";
+        headerRef.current.style.transform = "translateY(0)";
+      }
+    }, 100);
+
+    setTimeout(() => {
+      if (contentRef.current) {
+        contentRef.current.style.opacity = "1";
+        contentRef.current.style.transform = "translateY(0)";
+      }
+    }, 300);
+  }, []);
+
   return (
     <>
-      <div className="about-header">
+      <div 
+        className="about-header"
+        ref={headerRef}
+        style={{
+          opacity: 0,
+          transform: "translateY(20px)",
+          transition: "opacity 0.6s ease-out, transform 0.6s ease-out"
+        }}
+      >
         <h1>About Me</h1>
         <Marquee
           speed={50}
@@ -24,9 +52,20 @@ const AboutPage = () => {
           </p>
         </Marquee>
       </div>
-      <div className="about-page">
+      <div 
+        className="about-page"
+        ref={contentRef}
+        style={{
+          opacity: 0,
+          transform: "translateY(30px)",
+          transition: "opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s"
+        }}
+      >
         <div className="about-image-container">
-          <img src={aboutImage} alt="About Me" />
+          <img 
+            src={aboutImage} 
+            alt="About Me" 
+          />
         </div>
         <div className="about-par-container">
           <p>

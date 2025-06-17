@@ -8,3 +8,29 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --primary-color: #f98322;
+  --secondary-color: #666;
+  --text-color: #2b2b2b;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}

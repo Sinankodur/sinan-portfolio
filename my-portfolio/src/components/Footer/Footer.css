@@ -1,5 +1,5 @@
 .footer {
-  color: #2b2b2b;
+  color: var(--text-color);
   text-align: end;
   position: relative;
   bottom: 0;
@@ -33,7 +33,7 @@
 }
 
 .social-links a:hover {
-  color: #f98322;
+  color: var(--primary-color);
   transform: translateY(-3px);
 }
 
